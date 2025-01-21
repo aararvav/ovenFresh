@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <title>login</title>
+  </head>
+<body>
+    <header class="header">
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="index.html"> 
+                <img
+                  src="logo.jpg"
+                  alt="logo"
+                  class="nav__logo-dark"
+                />
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line">ovenFresh</i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">SPECIAL</a></li>
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU </a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <!-- <div class="bodyy">
+     <div class="wrapper">
+       <form action="">
+        <h1>login</h1>
+        <div class="inputbox">
+          <input type="text" id="username" placeholder="username" required>
+        </div>
+        <div class="inputbox">
+          <input type="password" id="username" placeholder="password" required>
+        </div>
+        <div class="rememberme">
+          <label><input type="checkbox">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+
+        <button type="submit" id="loginbutton" class="btnn">
+          <a href="user.html">LOGIN</a>
+        </button>
+
+        <div class="registerlink">
+          <p>don't have an account? <a href="#">register now</a></p>
+        </div>
+       </form>
+     </div>
+    </div> -->
+    
+    <div class="bodyy">
+      <div class="wrapper" id="form-wrapper">
+        <!-- Login Form -->
+        <form id="login-form">
+          <h1>login</h1>
+          <div class="inputbox">
+            <input type="text" id="username" placeholder="username" required>
+          </div>
+          <div class="inputbox">
+            <input type="password" id="password" placeholder="password" required>
+            <button type="button" id="toggle-password" style="position: absolute; right: 20px; top: 40%; background: none; border: none; cursor: pointer;">👁️</button>
+          </div>
+          <div class="rememberme">
+            <label><input type="checkbox">remember me</label>
+            <a href="#">forgot password?</a>
+          </div>
+          <button type="submit" id="loginbutton" class="btnn">LOGIN</button>
+          <div class="registerlink">
+            <p>don't have an account? <a href="#" id="register-link">register now</a></p>
+          </div>
+        </form>
+    
+        <!-- Register Form (Initially Hidden) -->
+        <form id="register-form" style="display: none;">
+          <h1>create account</h1>
+          <div class="inputbox">
+            <input type="text" id="first-name" placeholder="first name" required>
+          </div>
+          <div class="inputbox">
+            <input type="text" id="last-name" placeholder="last name" required>
+          </div>
+          <div class="inputbox">
+            <input type="email" id="email" placeholder="email id" required>
+          </div>
+          <div class="inputbox">
+            <input type="password" id="register-password" placeholder="password" required>
+            <button type="button" id="toggle-register-password" style="position: absolute; right: 20px; top: 40%; background: none; border: none; cursor: pointer;">👁️</button>
+          </div>
+          <button type="submit" class="btnn">CREATE ACCOUNT</button>
+          <div class="registerlink">
+            <p>already have an account? <a href="#" id="login-link">login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    
+    
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+footer
+report - bootstrap
+ppt - bootstrap                                     
+abstract
+login page
+user page where a user can get favs or previously ordered items.
+if possible, menu navbar on the side or always visible 
+payment gateway - checkout page 
+add to cart button changes to +1 -1
+.
+.
+.
+.
+.
+codechef, leetcode, hackerrank- 5stars. 

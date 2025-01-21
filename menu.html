@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+<body>    
+    <header class="header">
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="index.html" id="ermers">
+                <img
+                  src="logo.jpg"
+                  alt="logo"
+                  class="nav__logo-dark"
+                />
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line">ovenFresh</i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">SPECIAL</a></li>
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU </a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#specials">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pizza">Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sandwich">Sandwiches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#burger">Burgers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pasta">Pasta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sizzler">Sizzlers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#soup">Soup</a>
+            </li>
+          </ul>
+    </header>
+    
+    <!-- <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#specials">Specials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pizza">Pizza</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sandwich">Sandwiches</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#burger">Burgers</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#pasta">Pasta</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#sizzler">Sizzlers</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#soup">Soup</a>
+      </li>
+    </ul> -->
+
+<!-- speccals -->
+      <section class="section__container order__container" id="specials">
+        <h3>SPECIALS </h3>
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="chkprmsn2 .png" alt="order" class="ordrimg">
+            <h4>chicken parmesan</h4>
+            <button class="btn" onclick="addToCart('chicken parmesan',470)">add to cart</button>
+          </div>
+          <div class="order__card">
+            <img src="ovnrstdchk .png" alt="order" class="ordrimg">
+            <h4>oven roasted chicken</h4>
+            <button class="btn" onclick="addToCart('oven roasted chicken',450)">add to cart</button>
+          </div>
+          <div class="order__card">
+            <img src="grlldchk .png.jpg" alt="order" class="ordrimg">
+            <h4>grilled chicken steak</h4>
+            <button class="btn" onclick="addToCart('grilled chicken steak',480)">add to cart</button>
+          </div>
+        </div>
+        <div class="order__grid">
+            <div class="order__card">
+              <img src="enchlds .png .jpg" alt="order" class="ordrimg">
+              <h4>enchilada</h4>
+              <button class="btn" onclick="addToCart('enchilada',450)">add to cart</button>
+            </div>
+            <div class="order__card">
+              <img src="ench.jpg" alt="order" class="ordrimg">
+              <h4>quesdilla</h4>
+              <button class="btn" onclick="addToCart('quesdilla',410)">add to cart</button>
+            </div>
+            <div class="order__card">
+                <img src="brshcheta .png" alt="order" class="ordrimg">
+                <h4>bruschetta platter </h4>
+                <button class="btn" onclick="addToCart('bruschetta platter ',400)">add to cart</button>
+              </div>
+        </div>
+<!-- pizza  -->
+        <section class="section__container order__container" id="pizza">
+            <h3>PIZZZA </h3>
+            <div class="order__grid">
+              <div class="order__card">
+                <img src="peppypaneer .png" alt="order" class="ordrimg">
+                <h4>peppy paneer</h4>
+                <button class="btn" onclick="addToCart('peppy paneer',350)">add to cart</button>
+              </div>
+              <div class="order__card">
+                <img src="pizza .png" alt="order" class="ordrimg">
+                <h4>pepperoni</h4>
+                <button class="btn" onclick="addToCart('pepperoni',320)">add to cart</button>
+              </div>
+              <div class="order__card">
+                <img src="pizza3.png" alt="order" class="ordrimg">
+                <h4>veggie delight</h4>
+                <button class="btn" onclick="addToCart('veggie delight',300)">add to cart</button>
+              </div>
+            </div>
+            <div class="order__grid">
+            <div class="order__card">
+                <img src="pizza4.png" alt="order" class="ordrimg">
+                <h4>farmhouse</h4>
+                <button class="btn" onclick="addToCart('farmhouse',310)">add to cart</button>
+            </div>
+            <div class="order__card">
+                <img src="pizza5.jpg" alt="order" class="ordrimg">
+                <h4>margherita</h4>
+                <button class="btn" onclick="addToCart('margherita',290)">add to cart</button>
+            </div>
+            <div class="order__card">
+                <img src="pizza6 .png" alt="order" class="ordrimg">
+                <h4>cheese delight</h4>
+                <button class="btn" onclick="addToCart('cheese delight',348)">add to cart</button>
+            </div>
+        </div>
+        <!-- sandwich -->
+        <section class="section__container order__container" id="sandwich">
+            <h3>SANDWICHES</h3>
+            <div class="order__grid">
+              <div class="order__card">
+                <img src="sand1.png" alt="order" class="ordrimg">
+                <h4>club sandwich</h4>
+                <button class="btn" onclick="addToCart('club sandwich',210)">add to cart</button>
+              </div>
+              <div class="order__card">
+                <img src="sand2.png" alt="order" class="ordrimg">
+                <h4>chicken ham</h4>
+                <button class="btn" onclick="addToCart('chicken ham',290)">add to cart</button>
+              </div>
+              <div class="order__card">
+                <img src="sand3.png" alt="order" class="ordrimg">
+                <h4>veggie delight</h4>
+                <button class="btn" onclick="addToCart('veggie delight',220)">add to cart</button>
+              </div>
+            </div>
+            <div class="order__grid">
+            <div class="order__card">
+                <img src="sand4.jpg" alt="order" class="ordrimg">
+                <h4>grilled cheese sandwich</h4>
+                <button class="btn" onclick="addToCart('grilled cheese sandwich',280)">add to cart</button>
+            </div>
+            <div class="order__card">
+                <img src="sand5.jpg" alt="order" class="ordrimg">
+                <h4>cheese & ham</h4>
+                <button class="btn" onclick="addToCart('cheese & ham',290)">add to cart</button>
+            </div>
+            <div class="order__card">
+                <img src="sand6.jpg" alt="order" class="ordrimg">
+                <h4>eggie ham</h4>
+                <button class="btn" onclick="addToCart('eggie ham',210)">add to cart</button>
+            </div>
+        </div>
+<!-- burgers  -->
+    <section class="section__container order__container" id="burger">
+    <h3>BURGERS</h3>
+    <div class="order__grid">
+      <div class="order__card">
+        <img src="burg1.png" alt="order" class="ordrimg">
+        <h4>chicken ham</h4>
+        <button class="btn" onclick="addToCart('chicken ham',280)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="burg2.png" alt="order" class="ordrimg">
+        <h4>double decker bus</h4>
+        <button class="btn" onclick="addToCart('double decker bus',300)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="burg3.png" alt="order" class="ordrimg">
+        <h4>mac&cheese</h4>
+        <button class="btn" onclick="addToCart('mac&cheese',280)">add to cart</button>
+      </div>
+    </div>
+    <div class="order__grid">
+    <div class="order__card">
+        <img src="burg4.png" alt="order" class="ordrimg">
+        <h4>tarentino </h4>
+        <button class="btn" onclick="addToCart('tarentino',250)">add to cart</button>
+    </div>
+    <div class="order__card">
+        <img src="burg5.png" alt="order" class="ordrimg">
+        <h4>veg clubie</h4>
+        <button class="btn" onclick="addToCart('veg clubie',220)">add to cart</button>
+    </div>
+    <div class="order__card">
+        <img src="burg6.jpeg" alt="order" class="ordrimg">
+        <h4>paneer delight</h4>
+        <button class="btn" onclick="addToCart('paneer delight',280)">add to cart</button>
+    </div>
+</div>
+<!-- paasta -->
+  <section class="section__container order__container" id="pasta">
+    <h3>PASTAS</h3>
+    <div class="order__grid">
+      <div class="order__card">
+        <img src="pasta1 .png" alt="order" class="ordrimg">
+        <h4>chicken alfredo</h4>
+        <button class="btn" onclick="addToCart('chicken alfredo',300)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="pasta2 .png" alt="order" class="ordrimg">
+        <h4>tarentino pasta</h4>
+        <button class="btn" onclick="addToCart('tarentino pasta',290)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="pasta3.jpg" alt="order" class="ordrimg">
+        <h4>pennope pasta</h4>
+        <button class="btn" onclick="addToCart('pennope pasta',280)">add to cart</button>
+      </div>
+    </div>
+    <div class="order__grid">
+    <div class="order__card">
+        <img src="pasta4 .png" alt="order" class="ordrimg">
+        <h4>pookie pasta</h4>
+        <button class="btn" onclick="addToCart('pookie pasta',310)">add to cart</button>
+    </div>
+    <div class="order__card">
+        <img src="pasta5.jpg" alt="order" class="ordrimg">
+        <h4>tomater pasta</h4>
+        <button class="btn" onclick="addToCart('tomater pasta',270)">add to cart</button>
+    </div>
+    <div class="order__card">
+        <img src="pasta6.jpg" alt="order" class="ordrimg">
+        <h4>mac&cheese</h4>
+        <button class="btn" onclick="addToCart('mac&cheese',330)">add to cart</button>
+    </div>
+</div>
+<!-- spoups -->
+  <section class="section__container order__container" id="soup">
+  <h3>SOUPS</h3>
+  <div class="order__grid">
+      <div class="order__card">
+        <img src="soup1.jpg" alt="order" class="ordrimg">
+        <h4>cream of chicken</h4>
+        <button class="btn" onclick="addToCart('cream of chicken',280)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="soup2.png" alt="order" class="ordrimg">
+        <h4>broccoli soup</h4>
+        <button class="btn" onclick="addToCart('brocolli soup',240)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="soup4.jpg" alt="order" class="ordrimg">
+        <h4>farmhouse</h4>
+        <button class="btn" onclick="addToCart('farmhouse',250)">add to cart</button>
+      </div>
+    </div>
+<!-- Sizzlers -->
+  <section class="section__container order__container" id="sizzler">
+    <h3>SIZZLERS</h3>
+    <div class="order__grid">
+      <div class="order__card">
+        <img src="sizz4.jpg" alt="order" class="ordrimg">
+        <h4>indonesian sotay sizzler</h4> 
+        <button class="btn" onclick="addToCart('indonesian sotay sizzler',430)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="sizz3 .png" alt="order" class="ordrimg">
+        <h4>chicken steak sizzler</h4>
+        <button class="btn" onclick="addToCart('chicken steak sizzler',440)">add to cart</button>
+      </div>
+      <div class="order__card">
+        <img src="sizz2.png" alt="order" class="ordrimg">
+        <h4>cottage cheese sizzler</h4>
+        <button class="btn" onclick="addToCart('cottage cheese sizzler',450)">add to cart</button>
+      </div>
+    </div> 
+    </section>
+
+    <a href="#ermers" class="section__container order__container"> <h3> go to top </h3></a>
+
+<a href="cart.html" class="cart-button">
+  <i class="bi bi-cart"></i>
+</a>
+
+    <script src="payment.js"></script>
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
